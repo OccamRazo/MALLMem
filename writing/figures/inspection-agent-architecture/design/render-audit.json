@@ -1,0 +1,27 @@
+{
+  "schema": "academic-figure/RenderAudit@1",
+  "figure_id": "inspection-agent-architecture",
+  "render_revision": "r2",
+  "image_path": "/Users/erwin/Desktop/mine/projects/mem-humanoid/writing/figures/inspection-agent-architecture/inspection-agent-architecture.png",
+  "checks": {
+    "semantic_topology": "pass; manually checked source, target, direction and authority boundaries; group-border edges documented in prose",
+    "visible_text": "pass; XML text list exactly matches FigureSpec; Chinese inspected in actual raster",
+    "background": "pass; opaque RGB white canvas",
+    "layout": "pass; visually inspected at 1920x1080, corrected arrow/title overlap from r1",
+    "style_fidelity": "pass; central layers and sidebars, light blue/purple/mint rounded regions and editable line icons; adapted to 16:9",
+    "accessibility": "pass for measured text contrasts and inspected 1440x810 grayscale; color-vision simulation not run",
+    "scaled_legibility": "pass for presentation screen / 1440x810 preview; single-column paper size not claimed"
+  },
+  "pass": true,
+  "defects": [],
+  "targeted_edit": "r1→r2: removed long top tagline crossed by feedback edge; shortened Agent title; refined comparison-skill wording",
+  "semantic_edits_used": 1,
+  "semantic_edits_remaining": 1,
+  "residual_risks": [
+    "Fonts are not embedded; inspect layout if fonts change.",
+    "Import editing in third-party applications was not tested.",
+    "Conceptual proposal; neither implementation nor real-robot safety verified.",
+    "Grayscale preserves line styles and grouping; very pale panel boundaries are secondary cues."
+  ],
+  "verification_file": "verification.json"
+}

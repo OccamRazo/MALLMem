@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-21",
+  "device": "local macOS",
+  "svg": {
+    "text_elements": 86,
+    "unique_ids": 24,
+    "embedded_images": 0,
+    "foreign_objects": 0,
+    "visible_text_matches_spec": true,
+    "all_topology_component_ids_present": true
+  },
+  "png": {
+    "inspection-agent-architecture.png": {
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "metadata": {}
+    },
+    "inspection-agent-architecture-2x.png": {
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "mode": "RGB",
+      "metadata": {}
+    }
+  },
+  "text_contrast_pairs": [
+    {
+      "foreground": "#142D59",
+      "background": "#E8F0FF",
+      "ratio": 11.84
+    },
+    {
+      "foreground": "#435875",
+      "background": "#EAF1FF",
+      "ratio": 6.41
+    },
+    {
+      "foreground": "#14645F",
+      "background": "#E8F5F1",
+      "ratio": 6.22
+    },
+    {
+      "foreground": "#6650AD",
+      "background": "#F9F7FD",
+      "ratio": 5.96
+    },
+    {
+      "foreground": "#6650AD",
+      "background": "#F0ECFC",
+      "ratio": 5.46
+    },
+    {
+      "foreground": "#2457A6",
+      "background": "#FFFFFF",
+      "ratio": 7.03
+    }
+  ],
+  "local_links_checked": 11,
+  "sha256": {
+    "writing/figures/inspection-agent-architecture/generate.py": "b025dfc91b02d9d3b769547a480e57a15e9cdacdd687e49e2adfd33e1e5ec7a5",
+    "writing/figures/inspection-agent-architecture/render.cjs": "51501d706c0e44361d3dc42fb5fcc9ee9078a4dcc7dc53e23b910d3184f1afa3",
+    "writing/figures/inspection-agent-architecture/README.md": "13474b93c391d6e490a79f534edc71cca36ddb77c2b616982fa5b4a6c3dfeb7c",
+    "writing/figures/inspection-agent-architecture/inspection-agent-architecture.png": "781605d83bb656a4cea305046aa428ae6d5f53832a95a3c7ac37d857c33e6496",
+    "writing/figures/inspection-agent-architecture/inspection-agent-architecture.svg": "f8688501a6bba9416c975bf9e525b2ab4ac0d318565211061b280bedf434aa65",
+    "writing/figures/inspection-agent-architecture/inspection-agent-architecture-2x.png": "3a4f8c6b4d48f69a264a7ff87c4d64c77fc2496d8e87fafb576f57e3ea308e50",
+    "writing/figures/inspection-agent-architecture/design/figure-spec.json": "d72190208ce4f0bda3f4505c5de72b4f2978c6c0967ccf953938693e1deb9ed8",
+    "writing/figures/inspection-agent-architecture/design/figure-plan.json": "1fb6489b166dccf900536f115b7f351854ea14219abd0e5e0199ce1802d94360",
+    "writing/figures/inspection-agent-architecture/design/reference-analysis.json": "129742f6a758233eef6e2180a0fcf9e86abca802df0dc9b8a610a84a0f12ae05",
+    "writing/figures/inspection-agent-architecture/reference/user-sketch.png": "e070e5e0da96c7f06f37acf4be15f8db6a35e9b94834223da7828938a02bff0e",
+    "writing/figures/inspection-agent-architecture/reference/abot-agentos-figure1.png": "551c25f15baceb8ed0f48b73c6c2e21c0fabf0fa62bfe78990dd658d2fac1387",
+    "writing/inspection-agent-architecture.md": "41d7684a52c45a32a168e4b53660b85844c8363b635f07ade48737bf658b4b64"
+  }
+}

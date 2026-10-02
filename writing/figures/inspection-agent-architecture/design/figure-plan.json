@@ -1,0 +1,235 @@
+{
+  "schema": "academic-figure/FigurePlan@1",
+  "source_revision": "2026-09-21-r1",
+  "venue": "学术汇报 / 16:9 screen",
+  "sources": [
+    {
+      "kind": "user_instruction",
+      "uri_or_path": "/Users/erwin/Desktop/mine/projects/mem-humanoid/writing/figures/inspection-agent-architecture/reference/user-sketch.png",
+      "evidence": "用户草图：用户—Agent（VLM、Harness）—技能—机器人，工作记忆连接空间/情景/语义长期记忆；授权结合已有规划审视并完善。"
+    },
+    {
+      "kind": "paper_figure",
+      "uri_or_path": "https://arxiv.org/html/2607.10350v3#S2.F1",
+      "revision_or_page": "v3 Figure 1",
+      "evidence": "仅提取层叠中央区域、输入和硬件侧栏、淡蓝紫青色、细轮廓圆角、图标及双向连接的视觉语法。"
+    },
+    {
+      "kind": "project_plan",
+      "uri_or_path": "/Users/erwin/Desktop/mine/projects/mem-humanoid/docs/plan/roadmap.md",
+      "evidence": "L1–L3 当前优先；受控演化需要验证、门禁、审批和回滚。"
+    },
+    {
+      "kind": "research_proposal",
+      "uri_or_path": "/Users/erwin/Desktop/mine/projects/mem-humanoid/research/2026-09-07/l3-memory-consolidation-agent.md",
+      "evidence": "L2 经历与可回看证据；L3 聚合、反例检验、适用范围及版本；统计常态和规范规则独立。"
+    },
+    {
+      "kind": "research_survey",
+      "uri_or_path": "/Users/erwin/Desktop/mine/projects/mem-humanoid/research/2026-09-17/agent-harness-evolution-survey.md",
+      "evidence": "区分在线适应、记忆积累及持久 Harness 演化；候选需独立验证。"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "inspection-agent-architecture",
+      "figure_type": "system architecture",
+      "communication_goal": "解释在线巡检、可追溯记忆与受控巩固如何闭环",
+      "claim_scope": [
+        "proposed design, not implementation or measured result"
+      ],
+      "hero_element": "Agent Harness + L1–L3 memory",
+      "required_nodes": [
+        {
+          "id": "user",
+          "label": "用户 / 运维人员"
+        },
+        {
+          "id": "reasoner",
+          "label": "VLM / LLM"
+        },
+        {
+          "id": "harness",
+          "label": "Agent Harness"
+        },
+        {
+          "id": "skills",
+          "label": "技能与工具"
+        },
+        {
+          "id": "hardware",
+          "label": "机器人执行层"
+        },
+        {
+          "id": "working-memory",
+          "label": "L1 工作记忆"
+        },
+        {
+          "id": "memory",
+          "label": "长期记忆"
+        },
+        {
+          "id": "spatial",
+          "label": "空间记忆"
+        },
+        {
+          "id": "episodic",
+          "label": "L2 情景记忆"
+        },
+        {
+          "id": "semantic",
+          "label": "L3 语义与图式记忆"
+        },
+        {
+          "id": "future-evolution",
+          "label": "受控演化"
+        }
+      ],
+      "required_connections": [
+        {
+          "from": "user",
+          "to": "harness",
+          "label": "任务目标与约束",
+          "kind": "runtime",
+          "direction": "forward"
+        },
+        {
+          "from": "harness",
+          "to": "user",
+          "label": "报告与证据",
+          "kind": "runtime",
+          "direction": "forward"
+        },
+        {
+          "from": "harness",
+          "to": "reasoner",
+          "label": "调用",
+          "kind": "runtime",
+          "direction": "forward"
+        },
+        {
+          "from": "reasoner",
+          "to": "harness",
+          "label": "建议",
+          "kind": "runtime",
+          "direction": "forward"
+        },
+        {
+          "from": "harness",
+          "to": "skills",
+          "label": "技能调用",
+          "kind": "runtime",
+          "direction": "forward"
+        },
+        {
+          "from": "skills",
+          "to": "harness",
+          "label": "结果与证据",
+          "kind": "runtime",
+          "direction": "forward"
+        },
+        {
+          "from": "skills",
+          "to": "hardware",
+          "label": "指令",
+          "kind": "runtime",
+          "direction": "forward"
+        },
+        {
+          "from": "hardware",
+          "to": "skills",
+          "label": "观测",
+          "kind": "runtime",
+          "direction": "forward"
+        },
+        {
+          "from": "working-memory",
+          "to": "harness",
+          "label": "构造上下文",
+          "kind": "runtime",
+          "direction": "forward"
+        },
+        {
+          "from": "harness",
+          "to": "working-memory",
+          "label": "更新任务状态",
+          "kind": "runtime",
+          "direction": "forward"
+        },
+        {
+          "from": "working-memory",
+          "to": "episodic",
+          "label": "筛选写入经历",
+          "kind": "memory",
+          "direction": "forward"
+        },
+        {
+          "from": "memory",
+          "to": "working-memory",
+          "label": "按任务检索 / 证据回填",
+          "kind": "memory",
+          "direction": "forward"
+        },
+        {
+          "from": "spatial",
+          "to": "episodic",
+          "label": "空间关联",
+          "kind": "memory",
+          "direction": "forward"
+        },
+        {
+          "from": "episodic",
+          "to": "semantic",
+          "label": "受检巩固",
+          "kind": "memory",
+          "direction": "forward"
+        },
+        {
+          "from": "memory",
+          "to": "future-evolution",
+          "label": "历史轨迹",
+          "kind": "future",
+          "direction": "forward"
+        },
+        {
+          "from": "future-evolution",
+          "to": "harness",
+          "label": "通过门禁后部署",
+          "kind": "future",
+          "direction": "forward"
+        }
+      ],
+      "authority_boundaries": [
+        "Model proposes; Harness dispatches and checks evidence.",
+        "Physical execution remains in platform skills and independent low-level safety control.",
+        "Statistical regularities cannot override externally supplied safety norms.",
+        "Future evolved configurations require independent validation and release approval."
+      ],
+      "secondary_context": [
+        "future controlled evolution"
+      ],
+      "forbidden_claims": [
+        "已实现或已验证",
+        "已冻结模型、平台或部署位置",
+        "异常反复出现即可成为安全规范",
+        "空间记忆等于另一个认知层级"
+      ],
+      "forbidden_connections": [
+        "reasoner -> low-level actuators",
+        "evolution candidate -> production without validation"
+      ],
+      "aspect_ratio": "16:9",
+      "final_width_mm": 338.7,
+      "style_profile_hint": "reference-led",
+      "reference_assets": [
+        "/Users/erwin/Desktop/mine/projects/mem-humanoid/writing/figures/inspection-agent-architecture/reference/abot-agentos-figure1.png",
+        "/Users/erwin/Desktop/mine/projects/mem-humanoid/writing/figures/inspection-agent-architecture/reference/user-sketch.png"
+      ],
+      "open_questions": [
+        "model, embodiment and quantitative thresholds remain unfrozen"
+      ],
+      "confidence": "high for project alignment; empirical benefit untested",
+      "review_status": "waived"
+    }
+  ]
+}

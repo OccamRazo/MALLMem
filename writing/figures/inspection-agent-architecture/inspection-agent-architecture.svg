@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+<title id="title">记忆增强的巡检机器人 Agent：概念架构</title><desc id="desc">用户任务经由模型和 Harness 调度技能，技能通过机器人适配和安全控制执行。工作记忆连接在线运行与空间、情景、语义记忆。受检巩固形成规律，受控演化为后续扩展。</desc>
+<defs><linearGradient id="blueWash" x2="1" y2="1"><stop stop-color="#F7FAFF"/><stop offset="1" stop-color="#EAF1FF"/></linearGradient><linearGradient id="purpleWash" x2="1" y2="1"><stop stop-color="#FBFAFF"/><stop offset="1" stop-color="#F0ECFC"/></linearGradient><linearGradient id="mintWash" x2="1" y2="1"><stop stop-color="#F6FCFB"/><stop offset="1" stop-color="#E8F5F1"/></linearGradient>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 9 5 1 9" fill="none" stroke="#142D59" stroke-width="1.7" stroke-linejoin="round"/></marker>
+<marker id="teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 9 5 1 9" fill="none" stroke="#14645F" stroke-width="1.7" stroke-linejoin="round"/></marker>
+<marker id="purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 9 5 1 9" fill="none" stroke="#6650AD" stroke-width="1.7" stroke-linejoin="round"/></marker>
+</defs><rect width="1920" height="1080" fill="#FFFFFF"/><g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif">
+<g id="figure-heading">
+<text x="40" y="88" font-size="30" fill="#142D59" font-weight="650" text-anchor="start">记忆增强的</text>
+<text x="40" y="132" font-size="30" fill="#142D59" font-weight="650" text-anchor="start">巡检机器人</text>
+<text x="40" y="176" font-size="38" fill="#2457A6" font-weight="700" text-anchor="start">Agent</text>
+<path d="M40,205 L250,205" fill="none" stroke="#2457A6" stroke-width="2"/>
+<text x="40" y="236" font-size="20" fill="#435875" font-weight="400" text-anchor="start">概念架构 · 研究设计</text>
+</g>
+<g id="skills">
+<rect x="330" y="40" width="1220" height="210" rx="22" fill="url(#purpleWash)" stroke="#9B8DCB" stroke-width="1.6"/>
+<text x="940" y="82" font-size="30" fill="#142D59" font-weight="700" text-anchor="middle">技能与工具  Skills &amp; Tools</text>
+<g transform="translate(440 107) scale(0.8)" fill="none" stroke="#6650AD" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 42h14c13 0 13-16 0-16S7 10 19 10h13"/><path d="M37 9c-10 0-10 13 0 20 10-7 10-20 0-20Z"/><circle cx="37" cy="16" r="2.5"/>
+</g>
+<text x="465" y="179" font-size="24" fill="#142D59" font-weight="650" text-anchor="middle">导航与重访</text>
+<text x="465" y="213" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">到达目标 · 调整视角</text>
+<path d="M579,112 L579,223" fill="none" stroke="#CCC4E9" stroke-width="1"/>
+<g transform="translate(678 107) scale(0.8)" fill="none" stroke="#6650AD" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M2 25C13 7 37 7 48 25 37 43 13 43 2 25Z"/><circle cx="25" cy="25" r="8"/>
+</g>
+<text x="703" y="179" font-size="24" fill="#142D59" font-weight="650" text-anchor="middle">视觉感知</text>
+<text x="703" y="213" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">识别对象 · 读取状态</text>
+<path d="M817,112 L817,223" fill="none" stroke="#CCC4E9" stroke-width="1"/>
+<g transform="translate(916 107) scale(0.8)" fill="none" stroke="#6650AD" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="2" y="6" width="18" height="32" rx="3"/><rect x="30" y="6" width="18" height="32" rx="3"/><path d="M7 30l5-7 4 3M35 30l5-14 4 6M20 44h10m-3-3 3 3-3 3"/>
+</g>
+<text x="941" y="179" font-size="24" fill="#142D59" font-weight="650" text-anchor="middle">变化与异常核查</text>
+<text x="941" y="213" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">历史对比 · 规范核对</text>
+<path d="M1055,112 L1055,223" fill="none" stroke="#CCC4E9" stroke-width="1"/>
+<g transform="translate(1154 107) scale(0.8)" fill="none" stroke="#6650AD" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M10 2h23l9 10v36H10Z M32 3v11h10M17 23h18M17 30h18M17 37h11"/>
+</g>
+<text x="1179" y="179" font-size="24" fill="#142D59" font-weight="650" text-anchor="middle">巡检报告</text>
+<text x="1179" y="213" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">异常摘要 · 证据引用</text>
+<path d="M1293,112 L1293,223" fill="none" stroke="#CCC4E9" stroke-width="1"/>
+<g transform="translate(1392 107) scale(0.8)" fill="none" stroke="#6650AD" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M15 4v11l10 7 10-7V4M25 22v25M5 36h40"/><circle cx="25" cy="30" r="3"/>
+</g>
+<text x="1417" y="179" font-size="24" fill="#142D59" font-weight="650" text-anchor="middle">可扩展技能</text>
+<text x="1417" y="213" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">按平台接入操作能力</text>
+</g>
+<g id="agent">
+<rect x="330" y="320" width="1220" height="355" rx="22" fill="url(#blueWash)" stroke="#8AA4D0" stroke-width="1.6"/>
+<text x="358" y="357" font-size="29" fill="#142D59" font-weight="700" text-anchor="start">巡检 Agent · 在线闭环</text>
+<g id="reasoner">
+<rect x="355" y="380" width="280" height="164" rx="16" fill="#F8FAFF" stroke="#829FD0" stroke-width="1.6"/>
+<g transform="translate(375 396) scale(0.75)" fill="none" stroke="#2457A6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M25 8C17-1 8 7 10 14 0 18 4 31 10 31 6 42 19 49 25 39 31 49 44 42 40 31 48 31 50 18 40 14 42 7 33-1 25 8ZM25 8v31M12 19l7 5-6 6M38 19l-7 5 6 6"/>
+</g>
+<text x="491" y="425" font-size="27" fill="#142D59" font-weight="700" text-anchor="middle">VLM / LLM</text>
+<text x="495" y="466" font-size="22" fill="#142D59" font-weight="400" text-anchor="middle">场景理解 · 任务推理</text>
+<text x="495" y="505" font-size="20" fill="#435875" font-weight="400" text-anchor="middle">提出计划与工具调用</text>
+</g>
+<g id="harness">
+<rect x="700" y="380" width="825" height="164" rx="16" fill="#E8F0FF" stroke="#829FD0" stroke-width="1.6"/>
+<text x="1112" y="410" font-size="27" fill="#142D59" font-weight="700" text-anchor="middle">Agent Harness · 运行编排</text>
+<rect x="718" y="428" width="245" height="96" rx="10" fill="#FFFFFF" stroke="#A6B9D8" stroke-width="1.6"/>
+<text x="840.5" y="463" font-size="24" fill="#142D59" font-weight="600" text-anchor="middle">规划与调度</text>
+<text x="840.5" y="499" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">子目标 · 前置条件</text>
+<rect x="988" y="428" width="245" height="96" rx="10" fill="#FFFFFF" stroke="#A6B9D8" stroke-width="1.6"/>
+<text x="1110.5" y="463" font-size="24" fill="#142D59" font-weight="600" text-anchor="middle">上下文管理</text>
+<text x="1110.5" y="499" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">检索 · 压缩 · 预算</text>
+<rect x="1258" y="428" width="249" height="96" rx="10" fill="#FFFFFF" stroke="#A6B9D8" stroke-width="1.6"/>
+<text x="1382.5" y="463" font-size="24" fill="#142D59" font-weight="600" text-anchor="middle">验证与恢复</text>
+<text x="1382.5" y="499" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">证据验收 · 重试 / 停止</text>
+</g>
+<path d="M700 449H635" fill="none" stroke="#142D59" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="667" y="435" font-size="17" fill="#142D59" font-weight="400" text-anchor="middle">调用</text>
+<path d="M635 508H700" fill="none" stroke="#142D59" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="667" y="493" font-size="17" fill="#142D59" font-weight="400" text-anchor="middle">建议</text>
+<g id="working-memory">
+<rect x="355" y="586" width="1170" height="64" rx="12" fill="#FFFFFF" stroke="#829FD0" stroke-width="1.6"/>
+<text x="378" y="626" font-size="25" fill="#2457A6" font-weight="650" text-anchor="start">L1 工作记忆</text>
+<path d="M554,600 L554,638" fill="none" stroke="#B1C0D9" stroke-width="1.4"/>
+<text x="581" y="626" font-size="21" fill="#142D59" font-weight="400" text-anchor="start">当前目标 / 进度    ·    近期观测 / 对象状态    ·    历史检索证据    ·    不确定性</text>
+</g>
+<path d="M900 586V544" fill="none" stroke="#142D59" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#blue)"/>
+<path d="M1300 544V586" fill="none" stroke="#142D59" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="1100" y="572" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">构造上下文 / 更新任务状态</text>
+</g>
+<g id="online-edges">
+<path d="M1085 380V250" fill="none" stroke="#142D59" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="1064" y="288" font-size="20" fill="#142D59" font-weight="400" text-anchor="end">技能调用</text>
+<path d="M1330 250V380" fill="none" stroke="#142D59" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="1350" y="288" font-size="20" fill="#142D59" font-weight="400" text-anchor="start">结果与证据</text>
+<path d="M265 423H330" fill="none" stroke="#142D59" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="297" y="406" font-size="18" fill="#142D59" font-weight="400" text-anchor="middle">任务</text>
+<path d="M330 556H265" fill="none" stroke="#142D59" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="297" y="539" font-size="18" fill="#142D59" font-weight="400" text-anchor="middle">报告</text>
+<path d="M1550 149H1630" fill="none" stroke="#142D59" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="1590" y="134" font-size="18" fill="#142D59" font-weight="400" text-anchor="middle">指令</text>
+<path d="M1630 213H1550" fill="none" stroke="#142D59" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="1590" y="198" font-size="18" fill="#142D59" font-weight="400" text-anchor="middle">观测</text>
+</g>
+<g id="user">
+<rect x="35" y="320" width="230" height="355" rx="22" fill="url(#blueWash)" stroke="#8AA4D0" stroke-width="1.6"/>
+<g transform="translate(125 344) scale(0.8)" fill="none" stroke="#2457A6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="25" cy="12" r="9"/><path d="M8 46v-9c0-16 34-16 34 0v9M17 37v9M33 37v9"/>
+</g>
+<text x="150" y="420" font-size="25" fill="#142D59" font-weight="650" text-anchor="middle">用户 / 运维人员</text>
+<path d="M56,443 L244,443" fill="none" stroke="#B9C8DF" stroke-width="1.4"/>
+<text x="150" y="480" font-size="22" fill="#142D59" font-weight="400" text-anchor="middle">任务目标与约束</text>
+<text x="150" y="515" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">巡检范围 · 安全规范</text>
+<text x="150" y="577" font-size="22" fill="#142D59" font-weight="400" text-anchor="middle">结果与证据回传</text>
+<text x="150" y="612" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">必要时确认 / 接管</text>
+</g>
+<g id="hardware">
+<rect x="1630" y="40" width="255" height="635" rx="22" fill="url(#blueWash)" stroke="#8AA4D0" stroke-width="1.6"/>
+<text x="1757" y="84" font-size="28" fill="#142D59" font-weight="700" text-anchor="middle">机器人执行层</text>
+<text x="1757" y="116" font-size="18" fill="#435875" font-weight="400" text-anchor="middle">Robot &amp; Environment</text>
+<rect x="1647" y="138" width="220" height="91" rx="12" fill="#FFFFFF" stroke="#A5B8D6" stroke-width="1.6"/>
+<text x="1757" y="173" font-size="24" fill="#142D59" font-weight="600" text-anchor="middle">平台适配接口</text>
+<text x="1757" y="207" font-size="19" fill="#435875" font-weight="400" text-anchor="middle">指令分发 · 状态回传</text>
+<g transform="translate(1661 255) scale(0.72)" fill="none" stroke="#2457A6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="3" y="14" width="44" height="29" rx="6"/><path d="M13 14l4-8h16l4 8"/><circle cx="25" cy="28" r="9"/>
+</g>
+<text x="1716" y="278" font-size="23" fill="#142D59" font-weight="600" text-anchor="start">相机 / RGB-D</text>
+<text x="1716" y="307" font-size="19" fill="#435875" font-weight="400" text-anchor="start">图像 · 深度</text>
+<g transform="translate(1661 338) scale(0.72)" fill="none" stroke="#2457A6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M25 42V9M10 27a21 21 0 0 1 30 0M4 20a30 30 0 0 1 42 0M17 34a11 11 0 0 1 16 0"/><circle cx="25" cy="42" r="3"/>
+</g>
+<text x="1716" y="362" font-size="23" fill="#142D59" font-weight="600" text-anchor="start">LiDAR / IMU</text>
+<text x="1716" y="391" font-size="19" fill="#435875" font-weight="400" text-anchor="start">几何 · 位姿</text>
+<g transform="translate(1661 421) scale(0.72)" fill="none" stroke="#2457A6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="10" y="9" width="30" height="21" rx="7"/><path d="M25 9V2M17 36h16l5 13M17 36l-5 13M25 30v18M6 14v12M44 14v12"/><circle cx="19" cy="19" r="2"/><circle cx="31" cy="19" r="2"/>
+</g>
+<text x="1716" y="446" font-size="23" fill="#142D59" font-weight="600" text-anchor="start">运动与执行器</text>
+<text x="1716" y="475" font-size="19" fill="#435875" font-weight="400" text-anchor="start">低层闭环控制</text>
+<rect x="1647" y="509" width="220" height="99" rx="12" fill="#F0F3F9" stroke="#869BB9" stroke-width="1.6"/>
+<g transform="translate(1660 531) scale(0.62)" fill="none" stroke="#142D59" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M25 3 44 11v14c0 11-12 20-19 24C18 45 6 36 6 25V11ZM15 25l7 7 14-15"/>
+</g>
+<text x="1765" y="548" font-size="22" fill="#142D59" font-weight="650" text-anchor="middle">独立安全控制</text>
+<text x="1757" y="582" font-size="20" fill="#142D59" font-weight="400" text-anchor="middle">限速 · 避障 · 急停</text>
+<text x="1757" y="645" font-size="21" fill="#435875" font-weight="400" text-anchor="middle">感知环境 ↔ 执行动作</text>
+</g>
+<g id="memory">
+<rect x="330" y="755" width="1220" height="290" rx="22" fill="url(#mintWash)" stroke="#83B3AC" stroke-width="1.6"/>
+<text x="356" y="795" font-size="29" fill="#14645F" font-weight="700" text-anchor="start">长期记忆  Long-term Memory</text>
+<text x="1525" y="794" font-size="21" fill="#14645F" font-weight="400" text-anchor="end">跨巡检积累 · 按证据检索 · 按版本更新</text>
+<g id="spatial">
+<rect x="355" y="829" width="260" height="151" rx="14" fill="#FFFFFF" stroke="#8CB7B1" stroke-width="1.6"/>
+<g transform="translate(370 846) scale(0.62)" fill="none" stroke="#14645F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 8l14-5 16 7 14-5v36l-14 5-16-7-14 5ZM17 3v36M33 10v36"/>
+</g>
+<text x="417" y="870" font-size="25" fill="#14645F" font-weight="650" text-anchor="start">空间记忆</text>
+<text x="375" y="911" font-size="20" fill="#142D59" font-weight="400" text-anchor="start">地点 · 拓扑 · 实体锚点</text>
+<text x="375" y="947" font-size="18" fill="#435875" font-weight="400" text-anchor="start">跨层索引 / 跨次身份关联</text>
+</g>
+<g id="episodic">
+<rect x="650" y="829" width="355" height="151" rx="14" fill="#FFFFFF" stroke="#8CB7B1" stroke-width="1.6"/>
+<g transform="translate(665 846) scale(0.62)" fill="none" stroke="#14645F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="4" y="4" width="42" height="32" rx="5"/><path d="M10 44h30M17 12l15 9-15 9Z"/>
+</g>
+<text x="712" y="870" font-size="25" fill="#14645F" font-weight="650" text-anchor="start">L2 情景记忆</text>
+<text x="670" y="911" font-size="20" fill="#142D59" font-weight="400" text-anchor="start">何时 · 何地 · 何物 · 发生何事</text>
+<text x="670" y="947" font-size="19" fill="#435875" font-weight="400" text-anchor="start">观测 / 动作 / 结果 + 原始证据</text>
+</g>
+<g id="semantic">
+<rect x="1110" y="829" width="415" height="151" rx="14" fill="#FFFFFF" stroke="#8CB7B1" stroke-width="1.6"/>
+<g transform="translate(1125 846) scale(0.62)" fill="none" stroke="#14645F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="17" y="2" width="16" height="13" rx="3"/><rect x="1" y="35" width="16" height="13" rx="3"/><rect x="33" y="35" width="16" height="13" rx="3"/><path d="M25 15v10H9v10M25 25h16v10"/>
+</g>
+<text x="1172" y="870" font-size="25" fill="#14645F" font-weight="650" text-anchor="start">L3 语义与图式记忆</text>
+<text x="1130" y="911" font-size="21" fill="#142D59" font-weight="400" text-anchor="start">常态 · 条件规律 · 可复用流程</text>
+<text x="1130" y="947" font-size="20" fill="#435875" font-weight="400" text-anchor="start">适用范围 · 反例 · 置信度 · 版本</text>
+</g>
+<path d="M615 908H650" fill="none" stroke="#14645F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#teal)"/>
+<path d="M1005 908H1110" fill="none" stroke="#14645F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#teal)"/>
+<text x="1057" y="883" font-size="19" fill="#14645F" font-weight="600" text-anchor="middle">受检巩固</text>
+<text x="1057" y="942" font-size="17" fill="#14645F" font-weight="400" text-anchor="middle">聚合 / 反例</text>
+<path d="M355,995 L1525,995" fill="none" stroke="#ACCEC7" stroke-width="1.4"/>
+<text x="355" y="1024" font-size="20" fill="#14645F" font-weight="400" text-anchor="start">共同契约：时间 · 空间 · 来源 · 观测质量 · 版本</text>
+<text x="1525" y="1024" font-size="20" fill="#14645F" font-weight="600" text-anchor="end">未观测 ≠ 正常；统计常态 ≠ 安全规范</text>
+</g>
+<g id="memory-edges">
+<path d="M827 650V755" fill="none" stroke="#14645F" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#teal)"/>
+<text x="802" y="711" font-size="21" fill="#14645F" font-weight="400" text-anchor="end">筛选写入经历</text>
+<path d="M1400 755V650" fill="none" stroke="#14645F" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#teal)"/>
+<text x="1375" y="711" font-size="21" fill="#14645F" font-weight="400" text-anchor="end">按任务检索 / 证据回填</text>
+</g>
+<g id="future-evolution">
+<rect x="1630" y="755" width="255" height="290" rx="20" fill="#F9F7FD" stroke="#8D7CB4" stroke-width="1.6" stroke-dasharray="8 6"/>
+<text x="1757" y="796" font-size="27" fill="#6650AD" font-weight="700" text-anchor="middle">受控演化</text>
+<text x="1757" y="827" font-size="19" fill="#6650AD" font-weight="400" text-anchor="middle">后续扩展</text>
+<path d="M1650,845 L1865,845" fill="none" stroke="#C8BFDB" stroke-width="1.4"/>
+<text x="1757" y="881" font-size="20" fill="#142D59" font-weight="400" text-anchor="middle">失败诊断 → 候选修改</text>
+<text x="1757" y="916" font-size="20" fill="#142D59" font-weight="400" text-anchor="middle">离线验证 → 回归门禁</text>
+<text x="1757" y="951" font-size="20" fill="#142D59" font-weight="400" text-anchor="middle">批准部署 → 监控回滚</text>
+<text x="1757" y="1008" font-size="20" fill="#6650AD" font-weight="400" text-anchor="middle">Harness / 记忆策略</text>
+</g>
+<path d="M1550 938H1630" fill="none" stroke="#6650AD" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#purple)" stroke-dasharray="8 6"/>
+<text x="1590" y="922" font-size="18" fill="#6650AD" font-weight="400" text-anchor="middle">轨迹</text>
+<path d="M1690 755V711H1587V525H1550" fill="none" stroke="#6650AD" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#purple)" stroke-dasharray="8 6"/>
+<text x="1750" y="703" font-size="19" fill="#6650AD" font-weight="400" text-anchor="middle">通过门禁后部署</text>
+<g id="legend">
+<text x="40" y="800" font-size="23" fill="#142D59" font-weight="650" text-anchor="start">阅读图示</text>
+<path d="M42 833H88" fill="none" stroke="#142D59" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="101" y="840" font-size="19" fill="#142D59" font-weight="400" text-anchor="start">运行 / 记忆流</text>
+<path d="M42 878H88" fill="none" stroke="#6650AD" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#purple)" stroke-dasharray="8 6"/>
+<text x="101" y="885" font-size="19" fill="#142D59" font-weight="400" text-anchor="start">后续演化流</text>
+<text x="40" y="938" font-size="21" fill="#14645F" font-weight="650" text-anchor="start">当前重点：L1–L3</text>
+<text x="40" y="977" font-size="19" fill="#435875" font-weight="400" text-anchor="start">模型与平台可替换</text>
+<text x="40" y="1012" font-size="19" fill="#435875" font-weight="400" text-anchor="start">图示不代表已实现</text>
+</g>
+</g></svg>

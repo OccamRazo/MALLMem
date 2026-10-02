@@ -1,0 +1,65 @@
+{
+  "schema": "academic-figure/ReferenceAnalysis@1",
+  "reference_id": "abot-agentos-figure1",
+  "source": {
+    "url_or_absolute_path": "https://arxiv.org/html/2607.10350v3/figure/agent_v7.png",
+    "local_absolute_path": "/Users/erwin/Desktop/mine/projects/mem-humanoid/writing/figures/inspection-agent-architecture/reference/abot-agentos-figure1.png",
+    "page_or_figure": "Figure 1",
+    "caption": "System architecture of the proposed robot agent (ABot-AgentOS)."
+  },
+  "semantic_structure": {
+    "components": [
+      "input",
+      "skills/tools",
+      "two model tiers",
+      "agent harness",
+      "memory system",
+      "robot hardware"
+    ],
+    "groups": [
+      "central layers",
+      "two sidebars"
+    ],
+    "edges": [
+      "input to runtime",
+      "runtime to hardware",
+      "runtime with skills",
+      "runtime with memory"
+    ],
+    "reading_order": "input → central stack → robot",
+    "uncertainties": []
+  },
+  "style_grammar": {
+    "composition": "top skills, central model and harness with working-memory strip, lower long-term memory; input at left and physical platform at right",
+    "regions": "large rounded low-tint panels with one level of inner cards; horizontal 16:9 adaptation of the reference",
+    "marks": "editable geometric vector icons, no copied raster illustrations",
+    "strokes": "thin panel borders, dark arrows, paired directed runtime edges; dashed future extension",
+    "fills": "very light blue, violet and mint gradients on white; no heavy shadows",
+    "typography": "Chinese sans serif with short English module aliases; dark navy headings",
+    "color_roles": "blue online cognition, purple tools and future extension, teal memory",
+    "motifs": "route, eye, comparison, document, model, camera, robot, map, episode and schema",
+    "emphasis": "central online agent plus evidence-grounded long-term memory",
+    "avoid": [
+      "cloud/edge dual-model topology",
+      "private/common memory topology",
+      "model/vendor branding"
+    ]
+  },
+  "transfer_policy": {
+    "reuse": [
+      "panel composition",
+      "color family",
+      "typographic hierarchy",
+      "roundness",
+      "simple icons"
+    ],
+    "do_not_copy": [
+      "two-model edge/cloud routing",
+      "private/common memory",
+      "robot brands",
+      "specific skills",
+      "paper performance claims"
+    ]
+  },
+  "confidence": "high"
+}
