@@ -4,8 +4,6 @@
 
 Develop and evaluate a memory-augmented robot agent for repeated inspection tasks. Combine L1 working memory, spatial indexing, L2 episodic memory, and L3 semantic and schema memory consolidated through evidence checks to accumulate and reuse traceable experience across inspections. Test whether this memory improves change and anomaly assessment, follow-up observation selection, and task completion while reducing errors from outdated or inapplicable memories. Explore controlled evolution of the agent harness and memory strategies as a later extension.
 
-The project is currently at the [architecture proposal stage](writing/inspection-agent-architecture.md); these benefits remain to be validated experimentally.
-
 ## Communication
 
 - Communicate in Chinese by default, unless the user requests another language.
